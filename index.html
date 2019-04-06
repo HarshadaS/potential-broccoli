@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+    HTML CRUD with JS
+</title>
+<link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- <script>
+  $( function() {
+    $( "#dob" ).datepicker();
+  } );
+  </script> -->
+
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <table>
+            <tr>
+                <td>
+                    <form autocomplete="off"  onsubmit="onFormSubmit();"  >  
+                        <div>
+                        <label>Full Name</label>
+                        <input type="text" name="FullName" id="fullname">
+                        </div><br>
+                        <div>
+                        <labe   l>Date of Birth</label>
+                        <input type="date" name="Dob" id="dob">
+                         </div><br>
+                         
+                         <label>Gender</label>
+                         <input type="radio" name="Gender" value="male"  >Male
+                         <input type="radio" name="Gender" value="female">Female
+                         <br>
+                         <div>
+                             <label>Education</label>
+                             <select name="edu" id="edu">
+                             <option value="select">--Select--</option>
+                             <option value="Engineering">Engineering</option>
+                             <option value="Medicine">Medicine</option>
+                             <option value="MBA">MBA</option>
+                            </select>
+                         </div><br>
+                         <div>
+                             <input type="checkbox" value="sub" name="sub"id="sub">Subscribe<br>
+                         </div><br>
+                         <div>
+                             <input type="submit" value="Submit" name="Submit" onclick="onFormSubmit(); event.preventDefault();">
+                             <input type="submit" value="Clear" name="Clear" onclick="ResetForm(); event.preventDefault();">
+                         </div>
+                         <td>
+                            <table name="List" id="plist">
+                                <thead>
+                                    <tr>
+                                        <th>Full Name</th>
+                                        <th>Date Of Birth</th>
+                                        <th>Gender</th>
+                                        <th>Education</th>
+                                        <th>IsSubscribed</th>
+                                   </tr>
+                                </thead>
+                            
+                                <tbody>
+                                </tbody>
+                            
+                            </table>
+                         </td>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
